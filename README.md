@@ -11,7 +11,7 @@
 
 ## czip.txt 文件获取方式
 1. 通过直接安装纯真网络客户端并将其导出为 txt 文件而获得。将其命名为 `czip.txt` 并放置在根目录下即可
-2. 通过 https://github.com/NuoMinMin/cz88/releases 下载 `czip.zip`，解压得到 `czip.txt` 并放置在根目录下即可
+2. github releases 下载地址：[czip.zip](https://github.com/NuoMinMin/cz88/releases/download/v1.0.0/czip.zip) 。下载得到 `czip.zip`，解压得到 `czip.txt` 并放置在根目录下即可
 
 ## 第三方包引入
 
