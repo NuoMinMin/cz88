@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "google/protobuf/empty.proto";
+import "google/api/annotations.proto";
+package app.pb;
+option go_package = "pb";
+option (gogoproto.goproto_getters_all) = false;
+
+service App {
+    rpc MyAddress(.google.protobuf.Empty) returns (AddressResp){
+        option (google.api.http) = {
+            get: "v1/my_address"
+        };
+    };
+    rpc Address(AddressReq) returns (AddressResp){
+        option (google.api.http) = {
+            get: "v1/address"
+        };
+    };
+}
+
+message AddressReq {
+    string ip = 1 [(gogoproto.moretags) = 'form:"ip"',(gogoproto.jsontag)='ip'];
+}
+
+message AddressResp {
+    string ip = 1;
+    string area = 2;
+    string isp = 3;
+}

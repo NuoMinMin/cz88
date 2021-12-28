@@ -1,0 +1,5 @@
+http: 127.0.0.1:8107
+rpc: 127.0.0.1:8108
+czip:
+  file_path: czip.txt
+  charset: gb18030
