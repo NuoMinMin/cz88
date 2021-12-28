@@ -28,9 +28,8 @@ func NewLoadYaml() *TLoadYaml {
 }
 
 func init() {
-	if err := NewLoadYaml().InitConfig(); err != nil {
-		defaultYamlConfig()
-	}
+	defaultYamlConfig()
+	_ = NewLoadYaml().InitConfig()
 }
 
 // Yaml config

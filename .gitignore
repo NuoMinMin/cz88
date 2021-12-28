@@ -17,3 +17,4 @@ vendor/
 .vscode/
 czip.txt
 /pb/build.sh
+config.yaml
